@@ -733,14 +733,14 @@
 
             </div>
 
-            <div class="lg:flex lg:justify-center lg:items-center lg:gap-7">
+            <div class=" grid grid-cols-1 lg:grid-cols-2 lg:gap-10 items-center">
 
                 <!-- card -->
-                <div class="space-y-6 border-[1px] p-6 md:p-8 lg:p-12 rounded-2xl lg:w-2/4">
+                <div class="space-y-6 border-[1px] p-6 md:p-8 lg:p-6 rounded-2xl ">
 
                     <!-- phone  -->
 
-                    <div class=" w-full p-8 bg-[#BCED6D] bg-opacity-20 space-y-6 rounded-2xl">
+                    <div class=" w-full p-2 bg-[#BCED6D] bg-opacity-20 space-y-6 rounded-2xl">
                         <figure class="mb-2"><img src="./Images/Group1171275317.png" alt="call" /></figure>
                         <div class="">
                             <h2>
@@ -752,7 +752,7 @@
                     </div>
                     <!-- Email  -->
 
-                    <div class=" w-full p-8 bg-[#FDDD5F] bg-opacity-20 space-y-6 rounded-2xl">
+                    <div class=" w-full p-2 bg-[#FDDD5F] bg-opacity-20 space-y-6 rounded-2xl">
                         <figure class="mb-2"><img src="./Images/Group1171275318.png" alt="call" /></figure>
                         <div class="">
                             <h2>
@@ -764,7 +764,7 @@
                     </div>
                     <!-- Location  -->
 
-                    <div class=" w-full p-8 bg-[#629CF3] bg-opacity-20 space-y-6 rounded-2xl">
+                    <div class=" w-full p-2 bg-[#629CF3] bg-opacity-20 space-y-6 rounded-2xl">
                         <figure class="mb-2"><img src="./Images/Group1171275321.png" alt="call" /></figure>
                         <div class="">
                             <h2>
@@ -784,7 +784,7 @@
                 <div>
                     <!-- Forms -->
 
-                    <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+                    <div class="lg:mt-0 mt-12 lg:space-y-12 space-y-6 gap-6 ">
 
                         <div class=" grid grid-col-1 lg:grid-cols-2 lg:gap-6 gap-4">
 
@@ -793,7 +793,7 @@
                             <div class="space-y-4 ">
                                 <h2 class="text-xl text-[#131318] font-extrabold">Your Name</h2>
                                 <input type="text" placeholder="Enter your full name"
-                                    class="input w-full lg:text-xs  p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
+                                    class="input w-full p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
                             </div>
 
                             <!-- email -->
@@ -801,7 +801,7 @@
                             <div class="space-y-4">
                                 <h2 class="text-xl text-[#131318] font-extrabold">Your Email</h2>
                                 <input type="email" placeholder="Enter your email"
-                                    class="input w-full lg:text-xs  p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
+                                    class="input w-full  p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
                             </div>
 
                         </div>
@@ -811,7 +811,7 @@
                             <div class="space-y-4">
                                 <h2 class="text-xl text-[#131318] font-extrabold">Subject</h2>
                                 <input type="text" placeholder="Enter your subject"
-                                    class="input w-full lg:text-xs  p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
+                                    class="input w-full  p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
                             </div>
 
                             <!-- phone number -->
@@ -819,7 +819,7 @@
                             <div class="space-y-4">
                                 <h2 class="text-xl text-[#131318] font-extrabold">Phone Number</h2>
                                 <input type="number" placeholder="Enter your phone number "
-                                    class="input w-full lg:text-xs   p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
+                                    class="input w-full   p-5 bg-[#131318] bg-opacity-10 text-base font-normal" />
                             </div>
 
 
@@ -834,13 +834,26 @@
 
                     <div class="mt-6 space-y-4">
                         <h2 class="text-xl text-[#131318] font-extrabold">Message</h2>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Write your message"
-                            class="w-full  p-5 bg-[#131318] bg-opacity-10 text-base font-normal rounded-xl "></textarea>
+                        
+
+
+                        <!-- message box start-->
+
+                        <label class="form-control">
+                            
+                            <textarea class="textarea textarea-bordered h-36 bg-[#131318] bg-opacity-10 text-base font-normal" placeholder="Write your message"></textarea>
+                            
+                          </label>
+
+                          <!-- message box end -->
+                           
 
                         <!-- button  -->
                         <button
                             class="btn btn-primary w-full text-white text-xl font-bold bg-[#FF4240] border-none duration-500">Send
                             Message</button>
+
+                          <!-- button end -->
                     </div>
 
                     <!-- message box and button end -->
